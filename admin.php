@@ -1702,11 +1702,8 @@ function ensureContactFormsTableExists() {
 
 // Add all the UI components and scripts to the page
 function renderAdminPage() {
-    // Make sure the job_applications table has required fields
-    ensureApplicationTableExists();
-    
-    // Make sure the contact_forms table has required fields
-    ensureContactFormsTableExists();
+    // Note: Table existence checks (ensureApplicationTableExists, ensureContactFormsTableExists)
+    // have been disabled from running on every page load to massively speed up performance.
     
     // Add resume viewing functionality
     addResumeViewingFunctionality();
@@ -1925,6 +1922,9 @@ if(isset($_POST['submit_form'])) {
         exit;
     }
 }
+
+// Release session lock to speed up parallel requests (like AJAX calls from the dashboard)
+session_write_close();
 ?> 
 
 <!DOCTYPE html>
