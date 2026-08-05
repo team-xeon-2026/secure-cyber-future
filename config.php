@@ -10,11 +10,9 @@ if (class_exists(\Dotenv\Dotenv::class) && file_exists(__DIR__ . '/.env')) {
 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://';
 $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
 $baseUrl = $protocol . $host;
-// If the app is in a subfolder like 'xeonnew' or 'xeon' locally, we should try to detect it or use a default.
-// In production on Render, the site is at the root.
-$requestUri = $_SERVER['REQUEST_URI'] ?? '';
-$isLocalXampp = (strpos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false);
-$basePath = $isLocalXampp ? '/xeon' : ''; // Hardcoded local path, empty for production root
+// Dynamically determine the base path (works for /xeon, /xeonnew, or root on Render)
+$scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
+$basePath = rtrim(dirname($scriptName), '/\\');
 
 // Database configuration for Supabase PostgreSQL connection
 $config = [
