@@ -375,7 +375,10 @@ function validatePassword($password) {
                                 <input type="email" name="email" class="form-control" value="<?php echo htmlspecialchars($email ?? ''); ?>" placeholder="Email" required>
                             </div>
                             <div class="mb-3">
-                                <input type="password" name="password" class="form-control" placeholder="Password" required>
+                                <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+                                <div class="text-end mt-1">
+                                    <a href="forgot_password.php" class="text-white small text-decoration-none">Forgot Password?</a>
+                                </div>
                             </div>
                             <!-- reCAPTCHA widget -->
                             <?php outputRecaptchaHtml('recaptcha-container', 'captcha-message'); ?>
