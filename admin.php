@@ -1833,10 +1833,7 @@ if (isset($_GET['action'])) {
         // ... existing default case ...
     }
 }
-// ... existing code ...
-// ?>
 
-// <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -2110,7 +2107,12 @@ session_write_close();
     <!-- Applications Management Section -->
     <section id="applications" class="content d-none">
         <div class="section-header">
-            <h2>Application Management</h2>
+            <div class="d-flex align-items-center">
+                <button class="mobile-toggle d-md-none me-3">
+                    <i class="bx bx-menu"></i>
+                </button>
+                <h2 class="mb-0">Application Management</h2>
+            </div>
             <div>
                 <span id="application-count" class="badge bg-secondary me-2">
                     <?php echo $totalApplications; ?> Applications
@@ -2257,7 +2259,12 @@ session_write_close();
     <!-- Resume Review Section -->
     <section id="resumes" class="content d-none">
         <div class="section-header">
-            <h2>Resume Review</h2>
+            <div class="d-flex align-items-center">
+                <button class="mobile-toggle d-md-none me-3">
+                    <i class="bx bx-menu"></i>
+                </button>
+                <h2 class="mb-0">Resume Review</h2>
+            </div>
         </div>
         
         <div class="row">
@@ -2360,7 +2367,12 @@ session_write_close();
     <!-- Add a Contacts Section after Resumes Section -->
     <section id="contacts" class="content" style="display: none;">
         <div class="section-header">
-            <h2>Contact Form Submissions</h2>
+            <div class="d-flex align-items-center">
+                <button class="mobile-toggle d-md-none me-3">
+                    <i class="bx bx-menu"></i>
+                </button>
+                <h2 class="mb-0">Contact Form Submissions</h2>
+            </div>
             <div>
                 <span class="badge bg-secondary">Last updated: <?php echo date('M d, Y H:i'); ?></span>
                 <button id="refresh-contacts" class="btn btn-sm btn-outline-primary ms-2">
@@ -2381,7 +2393,12 @@ session_write_close();
 
     <section id="inform" class="content" style="display: none;">
         <div class="section-header">
-            <h2>Inform Section</h2>
+            <div class="d-flex align-items-center">
+                <button class="mobile-toggle d-md-none me-3">
+                    <i class="bx bx-menu"></i>
+                </button>
+                <h2 class="mb-0">Inform Section</h2>
+            </div>
         </div>
         <div class="page-header">
 		<h1>
@@ -2514,7 +2531,7 @@ session_write_close();
     <script>
         // Mobile Sidebar Toggle Logic
         document.addEventListener('DOMContentLoaded', function() {
-            const mobileToggle = document.getElementById('mobileToggle');
+            const mobileToggles = document.querySelectorAll('.mobile-toggle');
             const closeSidebar = document.getElementById('closeSidebar');
             const sidebar = document.getElementById('adminSidebar');
             const overlay = document.getElementById('sidebarOverlay');
@@ -2524,7 +2541,9 @@ session_write_close();
                 overlay.classList.toggle('active');
             }
             
-            if (mobileToggle) mobileToggle.addEventListener('click', toggleSidebar);
+            mobileToggles.forEach(toggle => {
+                toggle.addEventListener('click', toggleSidebar);
+            });
             if (closeSidebar) closeSidebar.addEventListener('click', toggleSidebar);
             if (overlay) overlay.addEventListener('click', toggleSidebar);
             
