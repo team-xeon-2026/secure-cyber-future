@@ -134,7 +134,7 @@
                 <ul class="space-y-4">
                     <li class="flex items-center text-gray-300">
                         <i class="fas fa-phone mr-3 text-purple-500"></i>
-                        <span>(234) 567-8912</span>
+                        <span>12345678900</span>
                     </li>
                     <li class="flex items-center text-gray-300">
                         <i class="fas fa-envelope mr-3 text-purple-500"></i>
@@ -142,7 +142,7 @@
                     </li>
                     <li class="flex items-center text-gray-300">
                         <i class="fas fa-map-marker-alt mr-3 text-purple-500"></i>
-                        <span>Kazipur 6710, Sirajganj, BD</span>
+                        <span>Mumbai, Maharashtra, India</span>
                     </li>
                 </ul>
             </div>

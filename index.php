@@ -1272,9 +1272,9 @@ body.has-security-banner {
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading mb-4">Contact</h5>
                     <ul class="footer-contact">
-                        <li><i class="fas fa-phone-alt me-2"></i> (234) 567-8912</li>
+                        <li><i class="fas fa-phone-alt me-2"></i> 12345678900</li>
                         <li><i class="fas fa-envelope me-2"></i> testingwork102030@gmail.com</li>
-                        <li><i class="fas fa-map-marker-alt me-2"></i> Kazipur 6710, Sirajganj, BD</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Mumbai, Maharashtra, India</li>
                     </ul>
                 </div>
             </div>
