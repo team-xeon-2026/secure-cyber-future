@@ -648,6 +648,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'view_resume_inline' && isset($
             <title>Resume: '.htmlspecialchars($applicantName).'</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <style>
+        *, *::before, *::after { box-sizing: border-box; }
                 body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
                 .container { display: flex; flex-direction: column; height: 100%; }
                 .toolbar { background: #2c3e50; color: white; padding: 10px; display: flex; justify-content: space-between; align-items: center; }

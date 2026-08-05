@@ -50,6 +50,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
+        *, *::before, *::after { box-sizing: border-box; }
         :root {
             --primary-color: #8a2be2;
             --secondary-color: #1e90ff;
@@ -784,6 +785,7 @@
     </footer>
 
     <style>
+        *, *::before, *::after { box-sizing: border-box; }
         /* Footer Styles */
         .footer-section {
             background-color: rgba(16, 16, 45, 0.95);

@@ -181,6 +181,7 @@ function validatePassword($password) {
     <!-- Google reCAPTCHA and custom script -->
     <?php outputRecaptchaScript('recaptcha-container', 'login-submit-btn', 'captcha-message'); ?>
     <style>
+        *, *::before, *::after { box-sizing: border-box; }
         body {
             background-color: #121212;
             height: 100vh;

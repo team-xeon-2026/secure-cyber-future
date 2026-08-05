@@ -20,6 +20,7 @@
     <!-- Particles.js for animated background -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <style>
+        *, *::before, *::after { box-sizing: border-box; }
         :root {
             --primary: #9d4edd;
             --primary-light: #c77dff;

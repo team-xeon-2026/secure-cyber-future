@@ -65,6 +65,7 @@ session_write_close();
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        *, *::before, *::after { box-sizing: border-box; }
         body {
             background-color: #121212;
             height: 100vh;

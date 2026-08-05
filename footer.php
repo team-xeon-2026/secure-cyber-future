@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
+        *, *::before, *::after { box-sizing: border-box; }
         @keyframes glowPulse {
             0%, 100% { box-shadow: 0 0 5px rgba(168, 85, 247, 0.3); }
             50% { box-shadow: 0 0 15px rgba(168, 85, 247, 0.6); }

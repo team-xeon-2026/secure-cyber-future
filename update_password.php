@@ -150,6 +150,7 @@ function validatePassword($password) {
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        *, *::before, *::after { box-sizing: border-box; }
         body {
             background-color: #121212;
             height: 100vh;

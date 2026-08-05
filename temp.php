@@ -645,6 +645,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'view_resume_inline' && isset($
             <title>Resume: '.htmlspecialchars($applicantName).'</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <style>
+        *, *::before, *::after { box-sizing: border-box; }
                 body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
                 .container { display: flex; flex-direction: column; height: 100%; }
                 .toolbar { background: #2c3e50; color: white; padding: 10px; display: flex; justify-content: space-between; align-items: center; }
@@ -1844,6 +1845,7 @@ if (isset($_GET['action'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <style>
+        *, *::before, *::after { box-sizing: border-box; }
         :root {
             --sidebar-width: 250px;
             --sidebar-bg: #2c3e50;
