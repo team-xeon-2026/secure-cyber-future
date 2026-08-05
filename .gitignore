@@ -1,0 +1,15 @@
+# Dependencies
+vendor/
+node_modules/
+
+# Environment variables
+.env
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# OS generated files
+.DS_Store
+Thumbs.db
