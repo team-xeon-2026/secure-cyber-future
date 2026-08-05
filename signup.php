@@ -141,14 +141,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         
                         // Registration successful
                         $registration_success = true;
-                    } else {
                         $error_message = "Failed to insert user record";
-                        $debug_info = print_r($stmt->errorInfo(), true);
                     }
                 }
             } catch (PDOException $e) {
-                $error_message = "Registration failed: " . $e->getMessage();
-                $debug_info = "Error code: " . $e->getCode();
+                $error_message = "Registration failed. Please try again later.";
             }
         }
     }
@@ -409,9 +406,6 @@ function validatePassword($password) {
                         <?php if (!empty($error_message)): ?>
                             <div class="alert alert-danger">
                                 <?php echo htmlspecialchars($error_message); ?>
-                                <?php if (!empty($debug_info) && isset($_GET['debug'])): ?>
-                                    <div class="debug-info"><?php echo htmlspecialchars($debug_info); ?></div>
-                                <?php endif; ?>
                             </div>
                         <?php endif; ?>
                         
