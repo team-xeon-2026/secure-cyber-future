@@ -1,0 +1,346 @@
+[2025-03-28 21:14:52] Google auth script started
+[2025-03-28 21:14:52] GET params: {"login":"google"}
+[2025-03-28 21:14:52] SESSION: {"google_auth_initiated":1743176513}
+[2025-03-28 21:14:52] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-28 21:16:23] Google auth script started
+[2025-03-28 21:16:23] GET params: {"login":"google"}
+[2025-03-28 21:16:23] SESSION: {"google_auth_initiated":1743176692}
+[2025-03-28 21:16:23] Google login request initiated
+[2025-03-28 21:16:23] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-28 21:16:23] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-03-28 16:46:29][index.php] Google OAuth callback detected in index.php
+[2025-03-28 16:46:29][index.php] GET params: {"code":"4\/0AQSTgQE3bjmen7qN4vmIFafkHMk5trFjQtZP5sxphcytzbsAHxMu5B1VHcLWbJvAE0WKCg","scope":"email profile openid https:\/\/www.googleapis.com\/auth\/userinfo.profile https:\/\/www.googleapis.com\/auth\/userinfo.email","authuser":"0","prompt":"consent"}
+[2025-03-28 21:16:29][index.php] Code parameter found, redirecting to google_auth.php
+[2025-03-28 21:16:29][index.php] Redirect params: code=4%2F0AQSTgQE3bjmen7qN4vmIFafkHMk5trFjQtZP5sxphcytzbsAHxMu5B1VHcLWbJvAE0WKCg&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=consent
+[2025-03-28 21:16:29] Google auth script started
+[2025-03-28 21:16:29] GET params: {"code":"4\/0AQSTgQE3bjmen7qN4vmIFafkHMk5trFjQtZP5sxphcytzbsAHxMu5B1VHcLWbJvAE0WKCg","scope":"email profile openid https:\/\/www.googleapis.com\/auth\/userinfo.profile https:\/\/www.googleapis.com\/auth\/userinfo.email","authuser":"0","prompt":"consent"}
+[2025-03-28 21:16:29] SESSION: {"google_auth_initiated":1743176783}
+[2025-03-28 21:16:29] Google callback received with code parameter
+[2025-03-28 21:16:29] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-28 21:16:29] Attempting to fetch access token with auth code
+[2025-03-28 21:16:29] Access token obtained successfully
+[2025-03-28 21:16:29] Google user info retrieved: email=rugvedbarve2@gmail.com, name=Sairaj Barve, google_id=109883303033662716458
+[2025-03-28 21:16:29] Database connection established
+[2025-03-28 21:16:29] User query executed. User found: No
+[2025-03-28 21:16:29] New user, creating account with Google credentials
+[2025-03-28 21:16:29] Generated UUID for new user: 7945b596-ad2f-46bf-8c8e-0f11bdd1355a
+[2025-03-28 21:16:29] Available columns in users table: id, name, email, password, created_at, updated_at, google_id, auth_provider, profile_picture, last_login, login_count, instance_id, id, aud, role, email, encrypted_password, email_confirmed_at, invited_at, confirmation_token, confirmation_sent_at, recovery_token, recovery_sent_at, email_change_token_new, email_change, email_change_sent_at, last_sign_in_at, raw_app_meta_data, raw_user_meta_data, is_super_admin, created_at, updated_at, phone, phone_confirmed_at, phone_change, phone_change_token, phone_change_sent_at, confirmed_at, email_change_token_current, email_change_confirm_status, banned_until, reauthentication_token, reauthentication_sent_at, is_sso_user, deleted_at, is_anonymous
+[2025-03-28 21:16:29] Building SQL for user creation
+[2025-03-28 21:16:29] Adding profile_picture to insert query
+[2025-03-28 21:16:29] Adding auth_provider to insert query
+[2025-03-28 21:16:29] Adding created_at to insert query
+[2025-03-28 21:16:29] Adding updated_at to insert query
+[2025-03-28 21:16:29] Adding last_login to insert query
+[2025-03-28 21:16:29] Adding login_count to insert query
+[2025-03-28 21:16:29] Final SQL for user creation: INSERT INTO users (id, name, email, password, google_id, profile_picture, auth_provider, created_at, updated_at, last_login, login_count) VALUES (:id, :name, :email, :password, :google_id, :picture, 'google', :created_at, :updated_at, :last_login, 1)
+[2025-03-28 21:16:29] Bound required parameters
+[2025-03-28 21:16:29] Bound profile_picture parameter: Has value
+[2025-03-28 21:16:29] Bound created_at parameter: 2025-03-28 21:16:29
+[2025-03-28 21:16:29] Bound updated_at parameter: 2025-03-28 21:16:29
+[2025-03-28 21:16:29] Bound last_login parameter: 2025-03-28 21:16:29
+[2025-03-28 21:16:29] Executing user insert statement
+[2025-03-28 21:16:29] New user created successfully with ID: 7945b596-ad2f-46bf-8c8e-0f11bdd1355a
+[2025-03-28 21:16:29] Session created for new user
+[2025-03-28 21:16:29] Signup event recorded: Success
+[2025-03-28 21:16:29] Redirecting to index.php after successful signup and login
+[2025-03-28 21:20:34] Google auth script started
+[2025-03-28 21:20:34] GET params: {"login":"google"}
+[2025-03-28 21:20:34] SESSION: {"google_auth_initiated":1743176216}
+[2025-03-28 21:20:34] Google login request initiated
+[2025-03-28 21:20:34] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-28 21:20:34] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-03-28 23:25:08] Google auth script started
+[2025-03-28 23:25:08] GET params: {"login":"google"}
+[2025-03-28 23:25:08] SESSION: []
+[2025-03-28 23:25:08] Google login request initiated
+[2025-03-28 23:25:08] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-28 23:25:08] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-03-28 18:55:12][index.php] Google OAuth callback detected in index.php
+[2025-03-28 18:55:12][index.php] GET params: {"code":"4\/0AQSTgQH6I8SRVz0t333qdQRGG4j6_iXZ9QKZu4e2EQBSgIwQK4qGBRFZ1dwUtUj4YMcjDA","scope":"email profile openid https:\/\/www.googleapis.com\/auth\/userinfo.email https:\/\/www.googleapis.com\/auth\/userinfo.profile","authuser":"0","prompt":"none"}
+[2025-03-28 23:25:12][index.php] Code parameter found, redirecting to google_auth.php
+[2025-03-28 23:25:12][index.php] Redirect params: code=4%2F0AQSTgQH6I8SRVz0t333qdQRGG4j6_iXZ9QKZu4e2EQBSgIwQK4qGBRFZ1dwUtUj4YMcjDA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none
+[2025-03-28 23:25:12] Google auth script started
+[2025-03-28 23:25:12] GET params: {"code":"4\/0AQSTgQH6I8SRVz0t333qdQRGG4j6_iXZ9QKZu4e2EQBSgIwQK4qGBRFZ1dwUtUj4YMcjDA","scope":"email profile openid https:\/\/www.googleapis.com\/auth\/userinfo.email https:\/\/www.googleapis.com\/auth\/userinfo.profile","authuser":"0","prompt":"none"}
+[2025-03-28 23:25:12] SESSION: {"google_auth_initiated":1743184508}
+[2025-03-28 23:25:12] Google callback received with code parameter
+[2025-03-28 23:25:12] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-28 23:25:12] Attempting to fetch access token with auth code
+[2025-03-28 23:25:12] Access token obtained successfully
+[2025-03-28 23:25:12] Google user info retrieved: email=rugvedbarve2@gmail.com, name=Sairaj Barve, google_id=109883303033662716458
+[2025-03-28 23:25:12] Database connection established
+[2025-03-28 23:25:12] User query executed. User found: Yes, ID: 7945b596-ad2f-46bf-8c8e-0f11bdd1355a
+[2025-03-28 23:25:12] Existing user found, updating Google information
+[2025-03-28 23:25:12] User record updated successfully
+[2025-03-28 23:25:12] User session created: {"user_id":"7945b596-ad2f-46bf-8c8e-0f11bdd1355a","user_name":"Sairaj Barve","user_email":"rugvedbarve2@gmail.com","auth_provider":"google"}
+[2025-03-28 23:25:12] Login history recorded: Success
+[2025-03-28 23:25:12] Redirecting to index.php after successful login
+[2025-03-29 06:29:15] Google auth script started
+[2025-03-29 06:29:15] GET params: {"login":"google"}
+[2025-03-29 06:29:15] SESSION: []
+[2025-03-29 06:29:15] Google login request initiated
+[2025-03-29 06:29:15] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-29 06:29:16] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-03-29 01:59:19][index.php] Google OAuth callback detected in index.php
+[2025-03-29 01:59:19][index.php] GET params: {"code":"4\/0AQSTgQHIH2MEVYPDnSKlM6z-b4DYk2UtW2efYNbW8-SGo2oNMDBtl8Ybrg5yylCCxnS5xA","scope":"email profile https:\/\/www.googleapis.com\/auth\/userinfo.email openid https:\/\/www.googleapis.com\/auth\/userinfo.profile","authuser":"0","prompt":"none"}
+[2025-03-29 06:29:19][index.php] Code parameter found, redirecting to google_auth.php
+[2025-03-29 06:29:19][index.php] Redirect params: code=4%2F0AQSTgQHIH2MEVYPDnSKlM6z-b4DYk2UtW2efYNbW8-SGo2oNMDBtl8Ybrg5yylCCxnS5xA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none
+[2025-03-29 06:29:19] Google auth script started
+[2025-03-29 06:29:19] GET params: {"code":"4\/0AQSTgQHIH2MEVYPDnSKlM6z-b4DYk2UtW2efYNbW8-SGo2oNMDBtl8Ybrg5yylCCxnS5xA","scope":"email profile https:\/\/www.googleapis.com\/auth\/userinfo.email openid https:\/\/www.googleapis.com\/auth\/userinfo.profile","authuser":"0","prompt":"none"}
+[2025-03-29 06:29:19] SESSION: {"google_auth_initiated":1743209956}
+[2025-03-29 06:29:19] Google callback received with code parameter
+[2025-03-29 06:29:19] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-29 06:29:19] Attempting to fetch access token with auth code
+[2025-03-29 06:29:20] Access token obtained successfully
+[2025-03-29 06:29:20] Google user info retrieved: email=rugvedbarve2@gmail.com, name=Sairaj Barve, google_id=109883303033662716458
+[2025-03-29 06:29:20] Database connection established
+[2025-03-29 06:29:20] User query executed. User found: Yes, ID: 7945b596-ad2f-46bf-8c8e-0f11bdd1355a
+[2025-03-29 06:29:20] Existing user found, updating Google information
+[2025-03-29 06:29:20] User record updated successfully
+[2025-03-29 06:29:20] User session created: {"user_id":"7945b596-ad2f-46bf-8c8e-0f11bdd1355a","user_name":"Sairaj Barve","user_email":"rugvedbarve2@gmail.com","auth_provider":"google"}
+[2025-03-29 06:29:20] Login history recorded: Success
+[2025-03-29 06:29:20] Redirecting to index.php after successful login
+[2025-03-29 11:02:51] Google auth script started
+[2025-03-29 11:02:51] GET params: {"login":"google"}
+[2025-03-29 11:02:51] SESSION: []
+[2025-03-29 11:02:51] Google login request initiated
+[2025-03-29 11:02:51] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-29 11:02:51] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-03-29 06:32:54][index.php] Google OAuth callback detected in index.php
+[2025-03-29 06:32:54][index.php] GET params: {"code":"4\/0AQSTgQEth5sNvrnAlnh5hhvw69Kpmj0mtB2qnkmv0uf8BL1rAiZPQFVlLLj-XRNufqAMCA","scope":"email profile https:\/\/www.googleapis.com\/auth\/userinfo.email https:\/\/www.googleapis.com\/auth\/userinfo.profile openid","authuser":"0","prompt":"none"}
+[2025-03-29 11:02:54][index.php] Code parameter found, redirecting to google_auth.php
+[2025-03-29 11:02:54][index.php] Redirect params: code=4%2F0AQSTgQEth5sNvrnAlnh5hhvw69Kpmj0mtB2qnkmv0uf8BL1rAiZPQFVlLLj-XRNufqAMCA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none
+[2025-03-29 11:02:54] Google auth script started
+[2025-03-29 11:02:54] GET params: {"code":"4\/0AQSTgQEth5sNvrnAlnh5hhvw69Kpmj0mtB2qnkmv0uf8BL1rAiZPQFVlLLj-XRNufqAMCA","scope":"email profile https:\/\/www.googleapis.com\/auth\/userinfo.email https:\/\/www.googleapis.com\/auth\/userinfo.profile openid","authuser":"0","prompt":"none"}
+[2025-03-29 11:02:54] SESSION: {"google_auth_initiated":1743226371}
+[2025-03-29 11:02:54] Google callback received with code parameter
+[2025-03-29 11:02:54] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-29 11:02:54] Attempting to fetch access token with auth code
+[2025-03-29 11:02:55] Access token obtained successfully
+[2025-03-29 11:02:56] Google user info retrieved: email=rugvedbarve2@gmail.com, name=Sairaj Barve, google_id=109883303033662716458
+[2025-03-29 11:02:56] Database connection established
+[2025-03-29 11:02:56] User query executed. User found: Yes, ID: 7945b596-ad2f-46bf-8c8e-0f11bdd1355a
+[2025-03-29 11:02:56] Existing user found, updating Google information
+[2025-03-29 11:02:56] User record updated successfully
+[2025-03-29 11:02:56] User session created: {"user_id":"7945b596-ad2f-46bf-8c8e-0f11bdd1355a","user_name":"Sairaj Barve","user_email":"rugvedbarve2@gmail.com","auth_provider":"google"}
+[2025-03-29 11:02:56] Login history recorded: Success
+[2025-03-29 11:02:56] Redirecting to index.php after successful login
+[2025-03-29 12:25:53] Google auth script started
+[2025-03-29 12:25:53] GET params: {"login":"google"}
+[2025-03-29 12:25:53] SESSION: []
+[2025-03-29 12:25:53] Google login request initiated
+[2025-03-29 12:25:53] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-29 12:25:53] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-03-29 07:55:56][index.php] Google OAuth callback detected in index.php
+[2025-03-29 07:55:56][index.php] GET params: {"code":"4\/0AQSTgQEHB6IUoELv1Fb1o6lwXbGCvA_W3EDWUS5c0uJEVNfjVQwZwatGsXEdwUAoAAKl3A","scope":"email profile https:\/\/www.googleapis.com\/auth\/userinfo.profile openid https:\/\/www.googleapis.com\/auth\/userinfo.email","authuser":"0","prompt":"none"}
+[2025-03-29 12:25:56][index.php] Code parameter found, redirecting to google_auth.php
+[2025-03-29 12:25:56][index.php] Redirect params: code=4%2F0AQSTgQEHB6IUoELv1Fb1o6lwXbGCvA_W3EDWUS5c0uJEVNfjVQwZwatGsXEdwUAoAAKl3A&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none
+[2025-03-29 12:25:56] Google auth script started
+[2025-03-29 12:25:56] GET params: {"code":"4\/0AQSTgQEHB6IUoELv1Fb1o6lwXbGCvA_W3EDWUS5c0uJEVNfjVQwZwatGsXEdwUAoAAKl3A","scope":"email profile https:\/\/www.googleapis.com\/auth\/userinfo.profile openid https:\/\/www.googleapis.com\/auth\/userinfo.email","authuser":"0","prompt":"none"}
+[2025-03-29 12:25:56] SESSION: {"google_auth_initiated":1743231353}
+[2025-03-29 12:25:56] Google callback received with code parameter
+[2025-03-29 12:25:56] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-29 12:25:56] Attempting to fetch access token with auth code
+[2025-03-29 12:25:56] Access token obtained successfully
+[2025-03-29 12:25:56] Google user info retrieved: email=rugvedbarve2@gmail.com, name=Sairaj Barve, google_id=109883303033662716458
+[2025-03-29 12:25:56] Database connection established
+[2025-03-29 12:25:57] User query executed. User found: Yes, ID: 7945b596-ad2f-46bf-8c8e-0f11bdd1355a
+[2025-03-29 12:25:57] Existing user found, updating Google information
+[2025-03-29 12:25:57] User record updated successfully
+[2025-03-29 12:25:57] User session created: {"user_id":"7945b596-ad2f-46bf-8c8e-0f11bdd1355a","user_name":"Sairaj Barve","user_email":"rugvedbarve2@gmail.com","auth_provider":"google"}
+[2025-03-29 12:25:57] Login history recorded: Success
+[2025-03-29 12:25:57] Redirecting to index.php after successful login
+[2025-03-29 12:42:36] Google auth script started
+[2025-03-29 12:42:36] GET params: {"login":"google"}
+[2025-03-29 12:42:36] SESSION: []
+[2025-03-29 12:42:36] Google login request initiated
+[2025-03-29 12:42:36] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-29 12:42:36] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-03-29 13:58:59] Google auth script started
+[2025-03-29 13:58:59] GET params: {"login":"google"}
+[2025-03-29 13:58:59] SESSION: {"admin_logged_in":true,"admin_id":"admin_user","admin_username":"admin","admin_role":"admin"}
+[2025-03-29 13:58:59] Google login request initiated
+[2025-03-29 13:58:59] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-29 13:58:59] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-03-29 14:27:50] Google auth script started
+[2025-03-29 14:27:50] GET params: {"login":"google"}
+[2025-03-29 14:27:50] SESSION: []
+[2025-03-29 14:27:50] Google login request initiated
+[2025-03-29 14:27:50] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-29 14:27:50] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-03-30 11:54:32] Google auth script started
+[2025-03-30 11:54:32] GET params: {"login":"google"}
+[2025-03-30 11:54:32] SESSION: []
+[2025-03-30 11:54:32] Google login request initiated
+[2025-03-30 11:54:32] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-03-30 11:54:32] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-04-02 16:54:51] Google auth script started
+[2025-04-02 16:54:51] GET params: {"login":"google"}
+[2025-04-02 16:54:51] SESSION: []
+[2025-04-02 16:54:51] Google login request initiated
+[2025-04-02 16:54:52] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-04-02 16:54:52] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-04-02 16:54:52] Google auth script started
+[2025-04-02 16:54:52] GET params: {"login":"google"}
+[2025-04-02 16:54:52] SESSION: {"google_auth_initiated":1743593092}
+[2025-04-02 16:54:52] Google login request initiated
+[2025-04-02 16:54:52] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-04-02 16:54:52] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-04-02 13:25:04][index.php] Google OAuth callback detected in index.php
+[2025-04-02 13:25:04][index.php] GET params: {"error":"access_denied"}
+[2025-04-02 16:55:04][index.php] Error from Google: access_denied
+[2025-04-05 21:42:55] Google auth script started
+[2025-04-05 21:42:55] GET params: {"login":"google"}
+[2025-04-05 21:42:55] SESSION: {"admin_redirect_url":"\/xeon\/admin.php"}
+[2025-04-05 21:42:55] Google login request initiated
+[2025-04-05 21:42:55] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-04-05 21:42:55] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-04-05 21:48:34] Google auth script started
+[2025-04-05 21:48:34] GET params: {"login":"google"}
+[2025-04-05 21:48:34] SESSION: []
+[2025-04-05 21:48:34] Google login request initiated
+[2025-04-05 21:48:34] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-04-05 21:48:34] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-04-07 15:31:05] Google auth script started
+[2025-04-07 15:31:05] GET params: {"login":"google"}
+[2025-04-07 15:31:05] SESSION: []
+[2025-04-07 15:31:05] Google login request initiated
+[2025-04-07 15:31:05] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-04-07 15:31:06] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-07-08 20:04:51] Google auth script started
+[2025-07-08 20:04:51] GET params: {"login":"google"}
+[2025-07-08 20:04:51] SESSION: {"google_auth_initiated":1743869914,"quiz_solved_count":0,"played_videos":["Video 1","Video 2","Video 3"],"quiz_count":0,"quizzes":[],"uploads":[]}
+[2025-07-08 20:04:51] Google login request initiated
+[2025-07-08 20:04:51] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-07-08 20:04:51] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-09-24 09:18:34] Google auth script started
+[2025-09-24 09:18:34] GET params: {"login":"google"}
+[2025-09-24 09:18:34] SESSION: {"google_auth_initiated":1751985291,"quiz_solved_count":0,"played_videos":["Video 1","Video 2","Video 3"],"quiz_count":0,"quizzes":[],"uploads":[],"admin_logged_in":true,"admin_id":"admin_user","admin_username":"admin","admin_role":"admin"}
+[2025-09-24 09:18:34] Google login request initiated
+[2025-09-24 09:18:34] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-09-24 09:18:34] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-09-24 05:49:11][index.php] Google OAuth callback detected in index.php
+[2025-09-24 05:49:11][index.php] GET params: {"code":"4\/0AVGzR1D6yHxepNMdD0ZXWMe4_EJt-KbahIRkvWbLpmzUBNCFZwUCVst4eHoObzGn4Xx0hw","scope":"email profile https:\/\/www.googleapis.com\/auth\/userinfo.profile https:\/\/www.googleapis.com\/auth\/userinfo.email openid","authuser":"0","prompt":"consent"}
+[2025-09-24 09:19:11][index.php] Code parameter found, redirecting to google_auth.php
+[2025-09-24 09:19:11][index.php] Redirect params: code=4%2F0AVGzR1D6yHxepNMdD0ZXWMe4_EJt-KbahIRkvWbLpmzUBNCFZwUCVst4eHoObzGn4Xx0hw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent
+[2025-09-24 09:19:11] Google auth script started
+[2025-09-24 09:19:11] GET params: {"code":"4\/0AVGzR1D6yHxepNMdD0ZXWMe4_EJt-KbahIRkvWbLpmzUBNCFZwUCVst4eHoObzGn4Xx0hw","scope":"email profile https:\/\/www.googleapis.com\/auth\/userinfo.profile https:\/\/www.googleapis.com\/auth\/userinfo.email openid","authuser":"0","prompt":"consent"}
+[2025-09-24 09:19:11] SESSION: {"google_auth_initiated":1758685714,"quiz_solved_count":0,"played_videos":["Video 1","Video 2","Video 3"],"quiz_count":0,"quizzes":[],"uploads":[],"admin_logged_in":true,"admin_id":"admin_user","admin_username":"admin","admin_role":"admin"}
+[2025-09-24 09:19:11] Google callback received with code parameter
+[2025-09-24 09:19:11] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-09-24 09:19:11] Attempting to fetch access token with auth code
+[2025-09-24 09:19:12] Access token obtained successfully
+[2025-09-24 09:19:13] Google user info retrieved: email=sahilg1028@gmail.com, name=Sahil, google_id=107730328491785891717
+[2025-09-24 11:08:00] Google auth script started
+[2025-09-24 11:08:00] GET params: {"login":"google"}
+[2025-09-24 11:08:00] SESSION: {"google_auth_initiated":1758685714,"quiz_solved_count":0,"played_videos":["Video 1","Video 2","Video 3"],"quiz_count":0,"quizzes":[],"uploads":[],"admin_logged_in":true,"admin_id":"admin_user","admin_username":"admin","admin_role":"admin"}
+[2025-09-24 11:08:00] Google login request initiated
+[2025-09-24 11:08:00] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-09-24 11:08:00] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-09-24 14:21:51] Google auth script started
+[2025-09-24 14:21:51] GET params: {"login":"google"}
+[2025-09-24 14:21:51] SESSION: {"google_auth_initiated":1758692280,"quiz_solved_count":0,"played_videos":["Video 1","Video 2","Video 3"],"quiz_count":0,"quizzes":[],"uploads":[],"admin_logged_in":true,"admin_id":"admin_user","admin_username":"admin","admin_role":"admin"}
+[2025-09-24 14:21:51] Google login request initiated
+[2025-09-24 14:21:51] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-09-24 14:21:51] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-10-22 13:01:31] Google auth script started
+[2025-10-22 13:01:31] GET params: {"login":"google"}
+[2025-10-22 13:01:31] SESSION: []
+[2025-10-22 13:01:31] Google login request initiated
+[2025-10-22 13:01:31] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-10-22 13:01:31] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-10-22 13:25:19] Google auth script started
+[2025-10-22 13:25:19] GET params: {"login":"google"}
+[2025-10-22 13:25:19] SESSION: []
+[2025-10-22 13:25:19] Google login request initiated
+[2025-10-22 13:25:19] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-10-22 13:25:19] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-10-22 13:34:32] Google auth script started
+[2025-10-22 13:34:32] GET params: {"login":"google"}
+[2025-10-22 13:34:32] SESSION: []
+[2025-10-22 13:34:32] Google login request initiated
+[2025-10-22 13:34:32] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-10-22 13:34:32] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-10-22 14:11:59] Google auth script started
+[2025-10-22 14:11:59] GET params: {"login":"google"}
+[2025-10-22 14:11:59] SESSION: []
+[2025-10-22 14:11:59] Google login request initiated
+[2025-10-22 14:11:59] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-10-22 14:11:59] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-10-22 14:13:14] Google auth script started
+[2025-10-22 14:13:14] GET params: {"login":"google"}
+[2025-10-22 14:13:14] SESSION: []
+[2025-10-22 14:13:14] Google login request initiated
+[2025-10-22 14:13:14] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-10-22 14:13:14] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-10-24 15:25:35] Google auth script started
+[2025-10-24 15:25:35] GET params: {"login":"google"}
+[2025-10-24 15:25:35] SESSION: []
+[2025-10-24 15:25:35] Google login request initiated
+[2025-10-24 15:25:35] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-10-24 15:25:35] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-10-25 20:49:25] Google auth script started
+[2025-10-25 20:49:25] GET params: {"login":"google"}
+[2025-10-25 20:49:25] SESSION: []
+[2025-10-25 20:49:25] Google login request initiated
+[2025-10-25 20:49:25] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-10-25 20:49:25] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-10-27 09:08:45] Google auth script started
+[2025-10-27 09:08:45] GET params: {"login":"google"}
+[2025-10-27 09:08:45] SESSION: {"admin_logged_in":true,"admin_id":"admin_user","admin_username":"admin","admin_role":"admin"}
+[2025-10-27 09:08:45] Google login request initiated
+[2025-10-27 09:08:45] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-10-27 09:08:46] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-10-27 09:28:18] Google auth script started
+[2025-10-27 09:28:18] GET params: {"login":"google"}
+[2025-10-27 09:28:18] SESSION: []
+[2025-10-27 09:28:18] Google login request initiated
+[2025-10-27 09:28:18] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-10-27 09:28:18] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-10-27 13:56:31] Google auth script started
+[2025-10-27 13:56:31] GET params: {"login":"google"}
+[2025-10-27 13:56:31] SESSION: []
+[2025-10-27 13:56:31] Google login request initiated
+[2025-10-27 13:56:31] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-10-27 13:56:31] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-10-27 13:57:36] Google auth script started
+[2025-10-27 13:57:36] GET params: {"login":"google"}
+[2025-10-27 13:57:36] SESSION: {"google_auth_initiated":1761553591}
+[2025-10-27 13:57:36] Google login request initiated
+[2025-10-27 13:57:36] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-10-27 13:57:36] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2025-11-21 10:44:47] Google auth script started
+[2025-11-21 10:44:47] GET params: {"login":"google"}
+[2025-11-21 10:44:47] SESSION: {"admin_logged_in":true,"admin_id":"admin_user","admin_username":"admin","admin_role":"admin"}
+[2025-11-21 10:44:47] Google login request initiated
+[2025-11-21 10:44:47] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2025-11-21 10:44:47] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2026-02-13 20:11:48] Google auth script started
+[2026-02-13 20:11:48] GET params: {"login":"google"}
+[2026-02-13 20:11:48] SESSION: []
+[2026-02-13 20:11:48] Google login request initiated
+[2026-02-13 20:11:48] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2026-02-13 20:11:48] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2026-02-25 16:59:23] Google auth script started
+[2026-02-25 16:59:23] GET params: {"login":"google"}
+[2026-02-25 16:59:23] SESSION: []
+[2026-02-25 16:59:23] Google login request initiated
+[2026-02-25 16:59:23] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2026-02-25 16:59:23] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2026-03-01 23:57:53] Google auth script started
+[2026-03-01 23:57:53] GET params: {"login":"google"}
+[2026-03-01 23:57:53] SESSION: []
+[2026-03-01 23:57:53] Google login request initiated
+[2026-03-01 23:57:53] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2026-03-01 23:57:53] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2026-04-01 15:21:29] Google auth script started
+[2026-04-01 15:21:29] GET params: {"login":"google"}
+[2026-04-01 15:21:29] SESSION: []
+[2026-04-01 15:21:29] Google login request initiated
+[2026-04-01 15:21:29] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2026-04-01 15:21:29] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto
+[2026-04-04 10:56:04] Google auth script started
+[2026-04-04 10:56:04] GET params: {"login":"google"}
+[2026-04-04 10:56:04] SESSION: []
+[2026-04-04 10:56:04] Google login request initiated
+[2026-04-04 10:56:04] Google client initialized with redirect URI: http://localhost/xeon/index.php
+[2026-04-04 10:56:05] Redirecting to Google auth URL: https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=online&client_id=365909691431-0ijhuutcujvsflu6b5bd3divscd9cvpt.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fxeon%2Findex.php&state&scope=email%20profile&approval_prompt=auto

@@ -1,0 +1,68 @@
+/* reCAPTCHA styling for both light and dark themes */
+
+/* Container styling */
+.g-recaptcha {
+    transform: scale(0.9);
+    transform-origin: center;
+    margin: 5px auto;
+}
+
+/* Responsive styling for small screens */
+@media screen and (max-width: 480px) {
+    .g-recaptcha {
+        transform: scale(0.85);
+        transform-origin: left center;
+    }
+}
+
+/* Customize reCAPTCHA iframe */
+.grecaptcha-badge {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Success message for reCAPTCHA */
+.captcha-success {
+    color: #28a745;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+/* Error message for reCAPTCHA */
+.captcha-error {
+    color: #dc3545;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* Specific styles for dark theme pages */
+.dark-theme .captcha-success {
+    background-color: rgba(40, 167, 69, 0.2);
+}
+
+.dark-theme .captcha-error {
+    background-color: rgba(220, 53, 69, 0.2);
+}
+
+/* Spinner for loading states */
+.recaptcha-loading {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 0.15em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border 0.75s linear infinite;
+    margin-right: 0.5rem;
+}
+
+@keyframes spinner-border {
+    to { transform: rotate(360deg); }
+} 
