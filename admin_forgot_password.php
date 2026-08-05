@@ -47,8 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 // Determine base URL dynamically
                 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://';
                 $host = $_SERVER['HTTP_HOST'];
-                $isLocalXampp = (strpos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false);
-                $basePath = $isLocalXampp ? '/xeon' : '';
+                $basePath = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
                 $resetLink = $protocol . $host . $basePath . '/admin_reset_password.php?token=' . $token;
                 
                 // Send email
