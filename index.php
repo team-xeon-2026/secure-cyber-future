@@ -1273,7 +1273,7 @@ body.has-security-banner {
                     <h5 class="footer-heading mb-4">Contact</h5>
                     <ul class="footer-contact">
                         <li><i class="fas fa-phone-alt me-2"></i> (234) 567-8912</li>
-                        <li><i class="fas fa-envelope me-2"></i> info@byterox.com</li>
+                        <li><i class="fas fa-envelope me-2"></i> testingwork102030@gmail.com</li>
                         <li><i class="fas fa-map-marker-alt me-2"></i> Kazipur 6710, Sirajganj, BD</li>
                     </ul>
                 </div>
@@ -1281,7 +1281,7 @@ body.has-security-banner {
             
             <!-- Copyright Section -->
             <div class="copyright-section mt-5 pt-4 text-center">
-                <p>© 2025 ByteRox Cyber Security. All Rights Reserved.</p>
+                <p>© 2025 Secure Cyber Future. All Rights Reserved.</p>
             </div>
         </div>
     </footer>

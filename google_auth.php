@@ -7,20 +7,10 @@ use Google\Client;
 use Google\Service\Oauth2;
 
 // Error logging for debugging
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-// Debug log file
-$debug_log = __DIR__ . '/google_auth_debug.log';
+// Debugging disabled for production
 function debug_log($message) {
-    global $debug_log;
-    $timestamp = date('Y-m-d H:i:s');
-    file_put_contents($debug_log, "[$timestamp] $message\n", FILE_APPEND);
+    // Disabled
 }
-
-debug_log("Google auth script started");
-debug_log("GET params: " . json_encode($_GET));
-debug_log("SESSION: " . json_encode($_SESSION));
 
 // Initialize Google Client
 function getGoogleClient() {
@@ -44,16 +34,6 @@ function logError($message, $error = null) {
         $log_message .= " - " . $error;
     }
     error_log($log_message);
-    
-    // For debugging
-    if (true) { // Set to false in production
-        echo "<div style='background: #ffcccc; padding: 10px; margin: 10px 0; border: 1px solid red;'>";
-        echo "<strong>Error:</strong> " . htmlspecialchars($message);
-        if ($error) {
-            echo "<br><pre>" . htmlspecialchars(print_r($error, true)) . "</pre>";
-        }
-        echo "</div>";
-    }
 }
 
 // Handle the initial Google login request

@@ -138,7 +138,7 @@
                     </li>
                     <li class="flex items-center text-gray-300">
                         <i class="fas fa-envelope mr-3 text-purple-500"></i>
-                        <span>info@byterox.com</span>
+                        <span>testingwork102030@gmail.com</span>
                     </li>
                     <li class="flex items-center text-gray-300">
                         <i class="fas fa-map-marker-alt mr-3 text-purple-500"></i>
@@ -150,7 +150,7 @@
 
         <!-- Bottom Bar -->
         <div class="border-t border-gray-800 mt-12 pt-6 text-center">
-            <p class="text-gray-400">&copy; 2025 ByteRox Cyber Security. All Rights Reserved.</p>
+            <p class="text-gray-400">&copy; 2025 Secure Cyber Future. All Rights Reserved.</p>
         </div>
     </footer>
 </body>

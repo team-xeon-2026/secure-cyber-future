@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ByteRox - About Us</title>
+    <title>SECURE CYBER FUTURE - About Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -627,13 +627,13 @@
                             <path fill="#3498FE" d="M30,10 C41.0457,10 50,18.9543 50,30 C50,41.0457 41.0457,50 30,50 C18.9543,50 10,41.0457 10,30 C10,18.9543 18.9543,10 30,10 Z M30,20 C24.4772,20 20,24.4772 20,30 C20,35.5228 24.4772,40 30,40 C35.5228,40 40,35.5228 40,30 C40,24.4772 35.5228,20 30,20 Z"/>
                             <path fill="#9D4EDD" d="M30,15 C38.2843,15 45,21.7157 45,30 C45,38.2843 38.2843,45 30,45 C21.7157,45 15,38.2843 15,30 C15,21.7157 21.7157,15 30,15 Z M30,25 C27.2386,25 25,27.2386 25,30 C25,32.7614 27.2386,35 30,35 C32.7614,35 35,32.7614 35,30 C35,27.2386 32.7614,25 30,25 Z"/>
                             <text font-family="Arial-BoldMT, Arial" font-size="24" font-weight="bold" fill="#FFFFFF" x="60" y="35">
-                                <tspan>BYTEROX</tspan>
+                                <tspan>SECURE CYBER FUTURE</tspan>
                             </text>
                             <text font-family="Arial, Arial" font-size="12" fill="#FFFFFF" x="60" y="48">
                                 <tspan>CYBER SECURITY</tspan>
                             </text>
                         </g>
-                    </svg>'); ?>" alt="ByteRox Logo">
+                    </svg>'); ?>" alt="SECURE CYBER FUTURE Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -678,9 +678,9 @@
                     <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
                         <div class="d-flex align-items-center mb-4">
                             <i class="fas fa-shield-alt me-2" style="color: var(--primary-light);"></i>
-                            <span>WELCOME TO BYTEROX</span>
+                            <span>WELCOME TO SECURE CYBER FUTURE</span>
                         </div>
-                        <h1 class="hero-title">Defend Your Digital World with <span>ByteRox</span> Security Solutions</h1>
+                        <h1 class="hero-title">Defend Your Digital World with <span>SECURE CYBER FUTURE</span> Security Solutions</h1>
                         <p class="hero-subtitle">We provide cutting-edge cybersecurity solutions to protect your business from evolving digital threats. Our team of experts ensures your data remains secure and your operations continue without interruption.</p>
                         <div class="d-flex flex-wrap gap-3">
                             <a href="#" class="btn btn-primary btn-glow">GET STARTED <i class="fas fa-arrow-right ms-2"></i></a>
@@ -714,7 +714,7 @@
                 <div class="row">
                     <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
                         <h2 class="section-title">Who We Are</h2>
-                        <p class="mb-4">ByteRox is a leading cybersecurity company founded in 2015 with a mission to protect businesses of all sizes from the growing threat of cyber attacks. Our team of security experts brings decades of combined experience in threat detection, prevention, and response.</p>
+                        <p class="mb-4">SECURE CYBER FUTURE is a leading cybersecurity company founded in 2015 with a mission to protect businesses of all sizes from the growing threat of cyber attacks. Our team of security experts brings decades of combined experience in threat detection, prevention, and response.</p>
                         <p class="mb-4">We believe that robust security should be accessible to everyone, which is why we've developed scalable solutions that grow with your business. Our client-first approach means we take the time to understand your unique security challenges and develop tailored strategies to address them.</p>
                         <div class="row mt-5">
                             <div class="col-6 mb-4">
@@ -776,7 +776,7 @@
                                     <circle fill="#FFFFFF" cx="350" cy="150" r="5"/>
                                     <circle fill="#9D4EDD" cx="250" cy="200" r="10"/>
                                 </g>
-                            </svg>'); ?>" alt="About ByteRox" class="img-fluid rounded-lg shadow-lg">
+                            </svg>'); ?>" alt="About SECURE CYBER FUTURE" class="img-fluid rounded-lg shadow-lg">
                             <div class="position-absolute" style="bottom: -30px; right: -30px; animation: float 6s ease-in-out infinite;">
                                 <div class="bg-gradient p-4 rounded-lg shadow-lg" style="background: linear-gradient(45deg, var(--primary), var(--primary-light));">
                                     <h3 class="text-white mb-0">7+ Years</h3>
@@ -1008,7 +1008,7 @@
             <div class="container">
                 <div data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="cta-title">Ready to Secure Your Digital Assets?</h2>
-                    <p class="cta-text">Contact our team today to learn how ByteRox can help protect your business from cyber threats with our comprehensive security solutions.</p>
+                    <p class="cta-text">Contact our team today to learn how SECURE CYBER FUTURE can help protect your business from cyber threats with our comprehensive security solutions.</p>
                     <div class="btn-group">
                         <a href="#" class="btn btn-primary btn-glow">GET STARTED <i class="fas fa-arrow-right ms-2"></i></a>
                         <a href="#" class="btn btn-outline">LEARN MORE</a>
@@ -1028,15 +1028,15 @@
                                     <path fill="#3498FE" d="M30,10 C41.0457,10 50,18.9543 50,30 C50,41.0457 41.0457,50 30,50 C18.9543,50 10,41.0457 10,30 C10,18.9543 18.9543,10 30,10 Z M30,20 C24.4772,20 20,24.4772 20,30 C20,35.5228 24.4772,40 30,40 C35.5228,40 40,35.5228 40,30 C40,24.4772 35.5228,20 30,20 Z"/>
                                     <path fill="#9D4EDD" d="M30,15 C38.2843,15 45,21.7157 45,30 C45,38.2843 38.2843,45 30,45 C21.7157,45 15,38.2843 15,30 C15,21.7157 21.7157,15 30,15 Z M30,25 C27.2386,25 25,27.2386 25,30 C25,32.7614 27.2386,35 30,35 C32.7614,35 35,32.7614 35,30 C35,27.2386 32.7614,25 30,25 Z"/>
                                     <text font-family="Arial-BoldMT, Arial" font-size="24" font-weight="bold" fill="#FFFFFF" x="60" y="35">
-                                        <tspan>BYTEROX</tspan>
+                                        <tspan>SECURE CYBER FUTURE</tspan>
                                     </text>
                                     <text font-family="Arial, Arial" font-size="12" fill="#FFFFFF" x="60" y="48">
                                         <tspan>CYBER SECURITY</tspan>
                                     </text>
                                 </g>
-                            </svg>'); ?>" alt="ByteRox Logo">
+                            </svg>'); ?>" alt="SECURE CYBER FUTURE Logo">
                         </div>
-                        <p class="footer-text">ByteRox provides cutting-edge cybersecurity solutions to protect your business from evolving digital threats. Our team of experts ensures your data remains secure.</p>
+                        <p class="footer-text">SECURE CYBER FUTURE provides cutting-edge cybersecurity solutions to protect your business from evolving digital threats. Our team of experts ensures your data remains secure.</p>
                         <div class="footer-social">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1077,13 +1077,13 @@
                             </li>
                             <li>
                                 <i class="fas fa-envelope"></i>
-                                <span>info@byterox.com</span>
+                                <span>testingwork102030@gmail.com</span>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; <?php echo date('Y'); ?> ByteRox Cyber Security. All Rights Reserved.</p>
+                    <p>&copy; <?php echo date('Y'); ?> Secure Cyber Future. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>
