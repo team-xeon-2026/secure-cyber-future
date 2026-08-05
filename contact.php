@@ -27,53 +27,6 @@
         return $data;
     }
     
-    // Ensure contact_forms table exists
-    function ensureContactFormsTableExists() {
-        try {
-            $conn = getDbConnection();
-            
-            // Check if table exists
-            $sql = "SELECT EXISTS (
-                SELECT FROM information_schema.tables 
-                WHERE table_schema = 'public' 
-                AND table_name = 'contact_forms'
-            )";
-            
-            $stmt = $conn->prepare($sql);
-            $stmt->execute();
-            $tableExists = $stmt->fetchColumn();
-            
-            if (!$tableExists) {
-                // Create contact_forms table
-                $createTableSql = "
-                    CREATE TABLE contact_forms (
-                        id SERIAL PRIMARY KEY,
-                        name VARCHAR(255) NOT NULL,
-                        email VARCHAR(255) NOT NULL,
-                        phone VARCHAR(50),
-                        message TEXT NOT NULL,
-                        company_name VARCHAR(255),
-                        industry VARCHAR(50),
-                        ip_address VARCHAR(45),
-                        user_agent TEXT,
-                        created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-                        status VARCHAR(20) DEFAULT 'new'
-                    )
-                ";
-                $conn->exec($createTableSql);
-                error_log("Created contact_forms table");
-            }
-            
-            return true;
-        } catch (PDOException $e) {
-            error_log("Error checking/creating contact_forms table: " . $e->getMessage());
-            return false;
-        }
-    }
-    
-    // Ensure the contact_forms table exists
-    ensureContactFormsTableExists();
-    
     ?>
 <!DOCTYPE html>
 <html lang="en">
