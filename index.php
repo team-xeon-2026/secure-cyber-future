@@ -1014,7 +1014,7 @@ body.has-security-banner {
                     <div class="hero-badge">
                         <i class="fas fa-shield-alt"></i> WELCOME TO <?php echo strtoupper($companyName); ?>
                     </div>
-                    <h1 class="hero-title">Securing Future....<span class="highlight">Secure Cyber Future</span> Security Solutions</h1>
+                    <h1 class="hero-title">Securing Future.... <br class="d-md-none"><span class="highlight">Secure Cyber Future</span> Security Solutions</h1>
                     <p class="hero-description">Your security our commitment !</p>
                     <div class="d-flex flex-wrap">
                         <a href="services.php" class="btn btn-gradient">MORE<i class="fas fa-arrow-right ms-2"></i></a>
