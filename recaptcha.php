@@ -140,3 +140,5 @@ function outputRecaptchaHtml($container_id = 'recaptcha-container', $message_id 
         <div id="' . $message_id . '" class="text-center mt-2"></div>
     </div>';
 } 
+
+

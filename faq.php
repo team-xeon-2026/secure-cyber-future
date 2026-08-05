@@ -48,7 +48,7 @@
         }
         
         body, html {
-            height: 100%;
+            min-height: 100vh;
             font-family: 'Poppins', sans-serif;
             background-color: var(--dark-bg);
             color: var(--text-light);
@@ -667,4 +667,6 @@
     </style>
 </body>
 </html>
+
+
 

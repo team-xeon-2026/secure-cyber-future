@@ -8,3 +8,5 @@ $_SESSION['password_banner_dismissed'] = true;
 // Return a success response
 echo "success";
 ?> 
+
+

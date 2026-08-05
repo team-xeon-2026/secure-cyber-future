@@ -9,3 +9,5 @@ try {
 } catch (Exception $e) {
     echo "Migration failed: " . $e->getMessage() . "\n";
 }
+
+
