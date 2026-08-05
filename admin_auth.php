@@ -22,14 +22,22 @@ function is_admin_logged_in() {
  * @return array|bool The admin user details if authentication succeeds, false otherwise
  */
 function authenticate_admin($username, $password) {
-    // For this implementation, we're using hardcoded admin/admin credentials
-    // In a production environment, you would store these securely in the database
-    if ($username === 'admin' && $password === 'admin') {
-        return [
-            'id' => 'admin_user',
-            'username' => 'admin',
-            'role' => 'admin'
-        ];
+    try {
+        $conn = getDbConnection();
+        $stmt = $conn->prepare("SELECT id, username, password, role FROM admins WHERE username = :username");
+        $stmt->bindParam(':username', $username);
+        $stmt->execute();
+        $admin = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        if ($admin && password_verify($password, $admin['password'])) {
+            return [
+                'id' => $admin['id'],
+                'username' => $admin['username'],
+                'role' => $admin['role']
+            ];
+        }
+    } catch (PDOException $e) {
+        error_log("Admin auth error: " . $e->getMessage());
     }
     
     return false;

@@ -49,6 +49,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 }
+
+// Release session lock to speed up loading if another tab is open
+session_write_close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -136,6 +139,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
                 <div class="mb-3">
                     <input type="password" name="password" class="form-control" placeholder="Password" required>
+                    <div class="text-end mt-1">
+                        <a href="admin_forgot_password.php" class="text-white small text-decoration-none" style="opacity: 0.8;">Forgot Password?</a>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Login</button>
             </form>
