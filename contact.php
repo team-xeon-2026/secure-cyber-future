@@ -570,7 +570,7 @@
                             </div>
                             <h3>Email</h3>
                             <p>Send an email, we're always ready to assist.</p>
-                            <a href="mailto:Support@Lockbyte.Com">Support@Lockbyte.Com</a>
+                            <a href="mailto:testingwork102030@gmail.com">testingwork102030@gmail.com</a>
                         </div>
 
                         <div class="contact-info-item">

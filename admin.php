@@ -1871,16 +1871,16 @@ if(isset($_POST['submit_form'])) {
         //Server settings
         //$mail->SMTPDebug = SMTP::DEBUG_SERVER;
         $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';
+        $mail->Host       = $_ENV['SMTP_HOST'] ?? getenv('SMTP_HOST') ?? 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'leomanthan10@gmail.com';
-        $mail->Password   = 'dlculhknrihupxfs';
+        $mail->Username   = $_ENV['SMTP_USERNAME'] ?? getenv('SMTP_USERNAME');
+        $mail->Password   = $_ENV['SMTP_PASSWORD'] ?? getenv('SMTP_PASSWORD');
         $mail->SMTPSecure = 'tls';
-        $mail->Port       = 587;
+        $mail->Port       = $_ENV['SMTP_PORT'] ?? getenv('SMTP_PORT') ?? 587;
 
-        $mail->setFrom('leomanthan10@gmail.com', 'Admin');
+        $mail->setFrom($_ENV['SMTP_USERNAME'] ?? getenv('SMTP_USERNAME'), 'Admin');
         $mail->addAddress($to,$name);
-        $mail->addReplyTo('leomanthan10@gmail.com', 'Admin');
+        $mail->addReplyTo($_ENV['SMTP_USERNAME'] ?? getenv('SMTP_USERNAME'), 'Admin');
 
         // Handle file attachment
         if (!empty($_FILES['attachment']['name']) && is_uploaded_file($_FILES['attachment']['tmp_name'])) {
