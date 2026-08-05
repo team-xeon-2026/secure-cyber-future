@@ -625,8 +625,7 @@
                 padding: 100px 0 50px;
             }
         }
-        
-        @media (max-width: 480px) {
+
             .hiring-form-container {
                 padding: 20px 10px;
             }
@@ -667,6 +666,11 @@
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-10px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+    
+        @media (max-width: 480px) {
+            .navbar-brand span { font-size: 1.1rem; }
+            .navbar-brand img { width: 30px; height: 30px; }
         }
     </style>
 </head>
@@ -1039,6 +1043,12 @@
             -webkit-text-fill-color: transparent;
             font-weight: 500;
         }
+    
+        @media (max-width: 480px) {
+            .navbar-brand span { font-size: 1.1rem; }
+            .navbar-brand img { width: 30px; height: 30px; }
+        }
     </style>
 </body>
 </html>
+

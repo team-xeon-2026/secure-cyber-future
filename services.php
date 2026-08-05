@@ -415,6 +415,11 @@
         .footer-tagline {
             color: var(--text-muted);
         }
+    
+        @media (max-width: 480px) {
+            .navbar-brand span { font-size: 1.1rem; }
+            .navbar-brand img { width: 30px; height: 30px; }
+        }
     </style>
 </head>
 <body>
@@ -773,3 +778,4 @@
     </footer>
 </body>
 </html>
+

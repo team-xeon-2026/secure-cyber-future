@@ -421,7 +421,7 @@
                 height: 150px;
             }
         }
-        @media (max-width: 480px) {
+
             .contact-info-item {
                 padding: 15px;
             }
@@ -434,6 +434,11 @@
             .form-control {
                 padding: 10px 15px;
             }
+        }
+    
+        @media (max-width: 480px) {
+            .navbar-brand span { font-size: 1.1rem; }
+            .navbar-brand img { width: 30px; height: 30px; }
         }
     </style>
 </head>
@@ -879,6 +884,12 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: var(--text-muted);
         }
+    
+        @media (max-width: 480px) {
+            .navbar-brand span { font-size: 1.1rem; }
+            .navbar-brand img { width: 30px; height: 30px; }
+        }
     </style>
 </body>
 </html>
+

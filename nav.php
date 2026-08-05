@@ -166,7 +166,12 @@
     .dropdown-menu-dark .dropdown-item.text-danger:hover {
         background: rgba(255, 92, 117, 0.1);
     }
-</style>
+
+        @media (max-width: 480px) {
+            .navbar-brand span { font-size: 1.1rem; }
+            .navbar-brand img { width: 30px; height: 30px; }
+        }
+    </style>
 </head>
 <body>
 <!-- Navigation -->
@@ -287,3 +292,4 @@
     </script>
 </body>
 </html>  
+

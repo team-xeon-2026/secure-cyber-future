@@ -926,6 +926,13 @@
 body.has-security-banner {
     padding-top: 130px;
 }
+            
+    
+    
+        @media (max-width: 480px) {
+            .navbar-brand span { font-size: 1.1rem; }
+            .navbar-brand img { width: 30px; height: 30px; }
+        }
     </style>
 </head>
 <body>
@@ -1386,6 +1393,13 @@ body.has-security-banner {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: var(--text-muted);
         }
+            
+    
+    
+        @media (max-width: 480px) {
+            .navbar-brand span { font-size: 1.1rem; }
+            .navbar-brand img { width: 30px; height: 30px; }
+        }
     </style>
 
     <!-- Add this script at the end of your file, just before the closing body tag -->
@@ -1420,3 +1434,4 @@ body.has-security-banner {
     </script>
 </body>
 </html>
+

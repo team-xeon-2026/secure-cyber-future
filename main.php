@@ -606,6 +606,11 @@
                 linear-gradient(to bottom, rgba(157, 78, 221, 0.05) 1px, transparent 1px);
             z-index: 0;
         }
+    
+        @media (max-width: 480px) {
+            .navbar-brand span { font-size: 1.1rem; }
+            .navbar-brand img { width: 30px; height: 30px; }
+        }
     </style>
 </head>
 <body>
@@ -1252,3 +1257,4 @@
     </script>
 </body>
 </html> 
+

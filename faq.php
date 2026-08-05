@@ -286,6 +286,11 @@
             -webkit-text-fill-color: transparent;
             font-weight: 500;
         }
+    
+        @media (max-width: 480px) {
+            .navbar-brand span { font-size: 1.1rem; }
+            .navbar-brand img { width: 30px; height: 30px; }
+        }
     </style>
 </head>
 <body>
@@ -654,6 +659,12 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: var(--text-muted);
         }
+    
+        @media (max-width: 480px) {
+            .navbar-brand span { font-size: 1.1rem; }
+            .navbar-brand img { width: 30px; height: 30px; }
+        }
     </style>
 </body>
 </html>
+
